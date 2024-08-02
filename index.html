@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alekhya's Portfolio</title>
+    <style>
+        @keyframes colorChange {
+            50% { color: #86a8e7; }
+            75% { color: #91eae4; }
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #020005, #0303d1, #066eaa, #91eae4);
+            color: #fff;
+            padding-top: 60px; /* Space for fixed menu */
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            animation: colorChange 5s infinite;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #86a8e7;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .home {
+            padding: 20px 0;
+            text-align: center;
+            background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+        }
+        .home img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+        .home h2 {
+            font-size: 2em;
+            margin: 10px 0;
+            animation: colorChange 5s infinite;
+        }
+        .home p {
+            font-size: 1.2em;
+        }
+        .about, .education, .projects, .contact {
+            background-color: #222;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .about h2, .education h2, .projects h2, .contact h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            animation: colorChange 5s infinite;
+        }
+        .about p, .education table, .projects p, .contact p {
+            line-height: 1.6;
+        }
+        .education table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .education table, .education th, .education td {
+            border: 1px solid #444;
+            padding: 10px;
+            text-align: center;
+        }
+        .education th {
+            background-color: #333;
+        }
+        .projects .project {
+            width: 48%;
+            margin: 1%;
+            background-color: #333;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .projects img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .projects a {
+            color: #86a8e7;
+            text-decoration: none;
+            font-size: 1.2em;
+            display: block;
+            margin: 10px 0;
+            text-align: center;
+        }
+        .projects .project-row {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .contact a {
+            color: #86a8e7;
+            text-decoration: none;
+            font-size: 1.2em;
+            display: inline-block;
+            margin: 10px;
+        }
+        .contact .contact-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .contact img {
+            width: 40px;
+            height: 40px;
+            margin: 0 10px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Alekhya's Portfolio</h1>
+    </header>
+    <div class="container">
+        <section id="home" class="home">
+            <img src="blue.jpg" alt="Professional Photo">
+            <h2>Creative Web Developer</h2>
+            <p>Bringing innovative ideas to life through web development.</p>
+        </section>
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>
+                Hi, I'm Alekhya, a web developer with a Master's in Computer Applications. I specialize in solving problems and bringing innovative ideas to life. My key projects include "LandSpark," a platform for property listings, and "Epic Identity," a facial recognition attendance system. I thrive in dynamic environments and am passionate about technology and travel.
+            </p>
+        </section>
+        <section id="education" class="education">
+            <h2>Education</h2>
+            <table>
+                <tr>
+                    <th>Level</th>
+                    <th>Institution</th>
+                    <th>CGPA</th>
+                    <th>Year of Passing</th>
+                </tr>
+                <tr>
+                    <td>Schooling</td>
+                    <td>Sri Chaitanya Techno School</td>
+                    <td>9.8</td>
+                    <td>2017</td>
+                </tr>
+                <tr>
+                    <td>Intermediate</td>
+                    <td>Sri Chaitanya College</td>
+                    <td>8.0</td>
+                    <td>2019</td>
+                </tr>
+                <tr>
+                    <td>Undergraduation</td>
+                    <td>Surya Teja Degree College</td>
+                    <td>8.9</td>
+                    <td>2022</td>
+                </tr>
+                <tr>
+                    <td>Masters</td>
+                    <td>Godavari Institute of Engineering And Technology</td>
+                    <td>8.64</td>
+                    <td>2024</td>
+                </tr>
+            </table>
+        </section>
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <div class="project-row">
+                <div class="project">
+                    <img src="Landspark.png" alt="LandSpark Project Image">
+                    <a href="https://github.com/Alekhyareddy14/LandSpark_website_for_landowners_and_landseekers.git" target="_blank">View LandSpark Project</a>
+                </div>
+                <div class="project">
+                    <img src="EpicIdentity.png" alt="Epic Identity Project Image">
+                    <a href="https://github.com/Alekhyareddy14/Facial_attendance_management_System.git" target="_blank">View Epic Identity Project</a>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <div class="contact-row">
+                <a href="mailto:alekhyabindureddy14@gmail.com">
+                    <img src="emaillogo.png" alt="Email Icon"> Email Me
+                </a>
+                <a href="https://www.linkedin.com/in/alekhya-bindu-karri-36ab99296" target="_blank">
+                    <img src="linkedinlogo.png" alt="LinkedIn Icon"> LinkedIn
+                </a>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
